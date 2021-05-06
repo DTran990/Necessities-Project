@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/7b1edd6a3a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media= "screen and (max-width:785px)" href="media.css">
+  <title>Necessities App</title>
+</head>
+<body>
+  <div id="head4">
+    <div id="header">
+      <ul>
+        <li><a href="calculator.html" class="checked">Calculator</a></li>
+        <li><a href="weather.html">Weather</a></li>
+        <li id="logo"><a id="logolink" href="index.html"><i class="fas fa-user-ninja fa-4x"></i></a></li>
+        <li><a href="todo.html" >To-do</a></li>
+        <li><a href="stopwatch.html">Stopwatch</a></li>
+      </ul>
+    </div>
+    <div id="header2">
+      <nav>
+        <div id="logo2"><a id="logolink logo logo2" href="index.html"><i class="fas fa-user-ninja fa-4x"></i></a></div>
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler">
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="index.html"  class="ham ">Home</a></li>
+                  <li><a href="calculator.html" class="ham hamchecked">Calculator</a></li>
+                  <li><a href="weather.html" class="ham">Weather</a></li>
+                  <li><a href="todo.html" class="ham ">To-do</a></li>
+                  <li><a href="stopwatch.html" class="ham">Stopwatch</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="calculatorcontainer">
+        <form id="calculatordisplay">
+          <input type="textview" value ="0" id="display" readonly>
+        </form>
+        <div id="calculatorbtns">
+          <table>
+            <tbody>
+              <tr>
+                <td><input class= "calcbtn" type="button" onclick = "clr()" value ="C"></td>
+                <td><input class= "calcbtn" type="button" onclick = "del()" value ="DEL"></td>
+                <td><input class= "calcbtn divide" type="button" onclick = "insert('/')" value ="&divide;"></td>
+                <td><input class="calcbtn operator" type="button" onclick= "insert('*')" value ="&times"></td>
+              </tr>
+              <tr>
+                <td><input class="calcbtn" type="button" onclick= "insert('7')" value ="7"></td>
+                <td><input class="calcbtn" type="button" onclick= "insert('8')" value ="8"></td>
+                <td><input class="calcbtn" type="button" onclick= "insert('9')" value ="9"></td>
+                <td><input class="calcbtn operator" type="button" onclick = "insert('-')" value ="-"></td>
+              </tr>
+              <tr>
+                <td><input class="calcbtn" type="button" onclick= "insert('4')" value ="4"></td>
+                <td><input class="calcbtn" type="button" onclick= "insert('5')" value ="5"></td>
+                <td><input class="calcbtn" type="button" onclick= "insert('6')" value ="6"></td>
+                <td><input class="calcbtn operator" type="button" onclick= "insert('+')" value ="+"></td>
+              </tr>
+              <tr>
+                <td><input class="calcbtn" type="button" onclick= "insert('1')" value ="1"></td>
+                <td><input class="calcbtn" type="button" onclick= "insert('2')" value ="2"></td>
+                <td><input class="calcbtn" type="button" onclick= "insert('3')" value ="3"></td>
+                <td rowspan="2"><input class="calcbtn operator" type="button" onclick= "equal()" value ="="></td>
+              </tr>
+              <tr>
+                <td ><input class="calcbtn" type="button" onclick= "insert('0')" value ="0"></td>
+                <td><input class="calcbtn" type="button" onclick= "insert('.')" value ="."></td>
+                <td ><input class="calcbtn" type="button" onclick= "ans()" value ="ANS"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js"></script>
+  <script src="appcalculator.js"></script>
+</body>
+</html>

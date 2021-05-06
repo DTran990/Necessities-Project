@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/7b1edd6a3a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media= "screen and (max-width:785px)" href="media.css">
+  <title>Necessities App</title>
+</head>
+<body>
+  <div id="head3">
+    <div id="header">
+      <ul>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="weather.html" class="checked">Weather</a></li>
+        <li id="logo"><a id="logolink" href="index.html"><i class="fas fa-user-ninja fa-4x"></i></a></li>
+        <li><a href="todo.html">To-do</a></li>
+        <li><a href="stopwatch.html">Stopwatch</a></li>
+      </ul>
+    </div>
+    <div id="header2">
+      <nav>
+        <div id="logo2"><a id="logolink logo logo2" href="index.html"><i class="fas fa-user-ninja fa-4x"></i></a></div>
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler">
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="index.html"  class="ham ">Home</a></li>
+                  <li><a href="calculator.html" class="ham ">Calculator</a></li>
+                  <li><a href="weather.html" class="ham hamchecked">Weather</a></li>
+                  <li><a href="todo.html" class="ham">To-do</a></li>
+                  <li><a href="stopwatch.html" class="ham">Stopwatch</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="weatherbox">
+      <form id="location" class="">
+        <label for="locationbar" id="bartext">Enter a Location</label><br>
+        <input type="text" id="locationbar" placeholder="Search">
+      </form>
+      <div class="d-none" id="weather">
+        <div id="weatherimg">
+        </div>
+        <div id="weathericon">
+        </div>
+        <div id="weatherinfo">
+          <div id="searchbutton">
+            <a href="#" id="searchbut"><i class="fas fa-search-location"></i>New Location</a>
+          </div>
+          <div id="conditioninfo">
+            <div id="cityheader">
+              <h3 id="Cityname">City Name</h5>
+            </div>
+            <div id="condition">Weather Condition</div>
+            <div id="temp">
+              <span>Temp</span>
+              <span>&deg;C</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="appweather.js"></script>
+</body>
+</html>

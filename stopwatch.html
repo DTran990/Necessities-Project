@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/7b1edd6a3a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media= "screen and (max-width:785px)" href="media.css">
+  <title>Necessities App</title>
+</head>
+<body>
+  <div id="head4">
+    <div id="header">
+      <ul>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="weather.html">Weather</a></li>
+        <li id="logo"><a id="logolink" href="index.html"><i class="fas fa-user-ninja fa-4x"></i></a></li>
+        <li><a href="calculator.html" >To-do</a></li>
+        <li><a href="stopwatch.html" class="checked">Stopwatch</a></li>
+      </ul>
+    </div>
+    <div id="header2">
+      <nav>
+        <div id="logo2"><a id="logolink logo logo2" href="index.html"><i class="fas fa-user-ninja fa-4x"></i></a></div>
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler">
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="index.html"  class="ham ">Home</a></li>
+                  <li><a href="calculator.html" class="ham ">Calculator</a></li>
+                  <li><a href="weather.html" class="ham">Weather</a></li>
+                  <li><a href="todo.html" class="ham">To-do</a></li>
+                  <li><a href="stopwatch.html" class="ham hamchecked">Stopwatch</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="stopwatchapp">
+      <div id="timer">
+        <h1>0:00.00</h1>
+      </div>
+      <div id="buttons">
+        <div class="timerbtn start"><a id ="startbutton" href="">Start</a></div>
+        <div class="timerbtn d-none stop"><a id ="stopbutton" href="" >Stop</a></div>
+        <div class="timerbtn reset"><a id ="resetbutton" href="" >Reset</a></div>
+        <div class="timerbtn d-none lap"><a id ="lapbutton" href="" >Lap</a></div>
+      </div>
+      <div id="laptime">
+        <div id="tableheading">
+          <p id="first">LAP NO.</p>
+          <p id="second">SPLIT</p>
+          <p id="third">TOTAL</p>
+        </div>
+        <ul id="timelist">
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js"></script>
+  <script src="appstopwatch.js"></script>
+</body>
+</html>

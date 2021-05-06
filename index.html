@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/7b1edd6a3a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media= "screen and (max-width:785px)" href="media.css">
+  <title>Necessities App</title>
+</head>
+<body>
+  <div id="head">
+    <div id="header" class="">
+      <ul>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="weather.html">Weather</a></li>
+        <li id="logo"><a id="logolink" href="index.html"><i class="fas fa-user-ninja fa-4x"></i></a></li>
+        <li><a href="todo.html">To-do</a></li>
+        <li><a href="stopwatch.html">Stopwatch</a></li>
+      </ul>
+    </div>
+    <div id="header2">
+      <nav>
+        <div id="logo2"><a id="logolink logo logo2" href="index.html"><i class="fas fa-user-ninja fa-4x"></i></a></div>
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler">
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="index.html"  class="ham hamchecked">Home</a></li>
+                  <li><a href="calculator.html" class="ham">Calculator</a></li>
+                  <li><a href="weather.html" class="ham">Weather</a></li>
+                  <li><a href="todo.html" class="ham">To-do</a></li>
+                  <li><a href="stopwatch.html" class="ham">Stopwatch</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="Welcome">
+      <div id="welcometext">
+        <h1>Welcome to the Necessities Application!</h1>
+        <p>This app contains everything that you will need to properly start your day and stay prepared for the challenges that are coming your way!</p>  
+      </div>
+      <div id="dateandtime">
+        <div id="time">
+          <p id="timezone">Eastern Daylight Time</p>
+          <p id="hour">00</p>
+          <p id="minute">00<span id="ampm">AM</span></p>
+          <p id="date">Wed, Jun 24, 2020</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
